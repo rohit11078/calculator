@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pizza Hub - Online Pizza Ordering</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="logo">
+            🍕 Pizza Hub
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#cart">Cart 🛒 <span id="cartCount">0</span></a>
+            <a href="#checkout">Checkout</a>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>Delicious Pizza Delivered Fast 🍕</h1>
+
+            <p>
+                Fresh ingredients, delicious taste and fast delivery.
+            </p>
+
+            <button onclick="scrollToMenu()">
+                Order Now
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MENU ================= -->
+
+    <section class="menu" id="menu">
+
+        <h2>Our Pizza Menu</h2>
+
+        <p class="section-subtitle">
+            Choose your favourite pizza
+        </p>
+
+
+        <div class="pizza-container">
+
+
+            <!-- PIZZA 1 -->
+
+            <div class="pizza-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1513104890138-7c749659a591"
+                    alt="Margherita Pizza"
+                >
+
+                <h3>Margherita Pizza</h3>
+
+                <p class="price">₹199</p>
+
+                <button onclick="addToCart('Margherita Pizza', 199)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- PIZZA 2 -->
+
+            <div class="pizza-card">
+
+                <img
+                    src="https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg"
+                    alt="Veggie Pizza"
+                >
+
+                <h3>Veggie Pizza</h3>
+
+                <p class="price">₹249</p>
+
+                <button onclick="addToCart('Veggie Pizza', 249)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- PIZZA 3 -->
+
+            <div class="pizza-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38"
+                    alt="Cheese Burst Pizza"
+                >
+
+                <h3>Cheese Burst Pizza</h3>
+
+                <p class="price">₹299</p>
+
+                <button onclick="addToCart('Cheese Burst Pizza', 299)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- PIZZA 4 -->
+
+            <div class="pizza-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1594007654729-407eedc4be65"
+                    alt="Pepper Pizza"
+                >
+
+                <h3>Pepper Pizza</h3>
+
+                <p class="price">₹349</p>
+
+                <button onclick="addToCart('Pepper Pizza', 349)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- PIZZA 5 -->
+
+            <div class="pizza-card">
+
+                <img
+                    src="https://images.pexels.com/photos/2147491/pexels-photo-2147491.jpeg"
+                    alt="Special Margherita Pizza"
+                >
+
+                <h3>Special Margherita</h3>
+
+                <p class="price">₹499</p>
+
+                <button onclick="addToCart('Special Margherita', 499)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- PIZZA 6 -->
+
+            <div class="pizza-card">
+
+                <img
+                    src="https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg"
+                    alt="Farmhouse Pizza"
+                >
+
+                <h3>Farmhouse Pizza</h3>
+
+                <p class="price">₹549</p>
+
+                <button onclick="addToCart('Farmhouse Pizza', 549)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- PIZZA 7 -->
+
+            <div class="pizza-card">
+
+                <img
+                    src="https://images.pexels.com/photos/845811/pexels-photo-845811.jpeg"
+                    alt="Deluxe Veggie Pizza"
+                >
+
+                <h3>Deluxe Veggie Pizza</h3>
+
+                <p class="price">₹499</p>
+
+                <button onclick="addToCart('Deluxe Veggie Pizza', 499)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- PIZZA 8 -->
+
+            <div class="pizza-card">
+
+                <img
+                    src="https://images.pexels.com/photos/1146760/pexels-photo-1146760.jpeg"
+                    alt="Mexican Pizza"
+                >
+
+                <h3>Mexican Pizza</h3>
+
+                <p class="price">₹349</p>
+
+                <button onclick="addToCart('Mexican Pizza', 349)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CART ================= -->
+
+    <section class="cart-section" id="cart">
+
+        <h2>🛒 Your Shopping Cart</h2>
+
+        <div id="cartItems">
+
+            <div class="empty-cart">
+
+                <p>Your cart is empty.</p>
+
+                <button onclick="scrollToMenu()">
+                    Browse Menu
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="cart-summary">
+
+            <h3>
+                Total Items:
+                <span id="totalItems">0</span>
+            </h3>
+
+            <h2>
+                Total:
+                ₹<span id="cartTotal">0</span>
+            </h2>
+
+            <button
+                class="checkout-btn"
+                onclick="showCheckout()"
+            >
+                Proceed to Checkout
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CHECKOUT ================= -->
+
+    <section class="checkout-section" id="checkout">
+
+        <h2>💳 Checkout</h2>
+
+        <p class="section-subtitle">
+            Enter your delivery details
+        </p>
+
+
+        <form id="checkoutForm">
+
+            <label for="customerName">
+                Full Name
+            </label>
+
+            <input
+                type="text"
+                id="customerName"
+                placeholder="Enter your name"
+                required
+            >
+
+
+            <label for="customerPhone">
+                Mobile Number
+            </label>
+
+            <input
+                type="tel"
+                id="customerPhone"
+                placeholder="Enter 10 digit mobile number"
+                pattern="[0-9]{10}"
+                maxlength="10"
+                required
+            >
+
+
+            <label for="customerAddress">
+                Delivery Address
+            </label>
+
+            <textarea
+                id="customerAddress"
+                placeholder="Enter your complete address"
+                required
+            ></textarea>
+
+
+            <label for="paymentMethod">
+                Payment Method
+            </label>
+
+            <select id="paymentMethod" required>
+
+                <option value="">
+                    Select Payment Method
+                </option>
+
+                <option value="Cash on Delivery">
+                    Cash on Delivery
+                </option>
+
+                <option value="UPI">
+                    UPI
+                </option>
+
+                <option value="Debit/Credit Card">
+                    Debit/Credit Card
+                </option>
+
+            </select>
+
+
+            <div class="checkout-total">
+
+                Total Amount:
+
+                ₹<span id="checkoutTotal">
+                    0
+                </span>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="place-order-btn"
+            >
+                Place Order
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- ================= ORDER CONFIRMATION ================= -->
+
+    <section
+        class="confirmation"
+        id="confirmation"
+    >
+
+        <div class="success-icon">
+            ✓
+        </div>
+
+        <h2>🎉 Order Confirmed!</h2>
+
+        <p>
+            Thank you for ordering from Pizza Hub.
+        </p>
+
+
+        <div id="orderDetails">
+
+        </div>
+
+
+        <button
+            onclick="continueShopping()"
+            class="continue-btn"
+        >
+            Continue Shopping
+        </button>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h2>🍕 Pizza Hub</h2>
+
+            <p>
+                Delicious pizza delivered to your doorstep.
+            </p>
+
+            <p>
+                © 2026 Pizza Hub. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

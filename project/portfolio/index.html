@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>rohit — Portfolio</title>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Rohit<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Dark / Light Mode Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Open Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO / HOME SECTION ========== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-text" data-aos="fade-right" data-aos-duration="900">
+        <p class="hero-greeting">👋 Hello World! I'm</p>
+        <h1 class="hero-name">rohit maheshwari</h1>
+        <h2 class="hero-title">
+        <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+        </h2>
+        <p class="hero-desc">
+          Passionate about building clean, responsive & user-friendly websites. BCA Student by day, Coder by night 🚀
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-eye"></i> View Projects
+          </a>
+          <a href="assets/resume.pdf" class="btn btn-outline" download>
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://instagram.com/" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-image" data-aos="fade-left" data-aos-duration="900">
+        <div class="profile-ring">
+          <div class="profile-img-wrap">
+            <!-- Replace this src with your actual photo -->
+            <img
+              src="https://ui-avatars.com/api/?name=Abhinav+Chourey&size=300&background=6c63ff&color=fff&bold=true&font-size=0.4"
+              alt="Abhinav Chourey Profile Photo"
+              class="profile-img"
+              id="profileImg"
+            />
+          </div>
+          <div class="ring ring-1"></div>
+          <div class="ring ring-2"></div>
+        </div>
+        <div class="floating-badge badge-html"><i class="fab fa-html5"></i> HTML5</div>
+        <div class="floating-badge badge-js"><i class="fab fa-js"></i> JS</div>
+        <div class="floating-badge badge-css"><i class="fab fa-css3-alt"></i> CSS3</div>
+      </div>
+    </div>
+
+    <div class="scroll-down">
+      <a href="#about"><i class="fas fa-chevron-down"></i></a>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Know Me More</span>
+        <h2 class="section-title">About <span class="highlight">Me</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-col" data-aos="fade-right" data-aos-delay="100">
+          <div class="about-img-wrap">
+            <img
+              src="https://ui-avatars.com/api/?name=Abhinav+Chourey&size=400&background=6c63ff&color=fff&bold=true&font-size=0.4"
+              alt="About Abhinav Chourey"
+              class="about-img"
+            />
+            <div class="about-exp-badge">
+              <span class="exp-number">2+</span>
+              <span class="exp-label">Years Coding</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text-col" data-aos="fade-left" data-aos-delay="100">
+          <h3 class="about-sub">Web Developer & BCA Student</h3>
+          <p class="about-desc">
+    </strong>  — a passionate web developer and BCA student.
+            I love creating websites — clean design, smooth animations and user-friendly experience. 
+            When I am not coding, I am playing games. 
+            I am still exploring technologies.
+          </p>
+          <p class="about-desc">
+            I believe in <strong>"Learn → Build → Share"</strong> mantra. Har project se kuch naya sikhta hoon 
+            aur apni skills continuously improve karta hoon.
+          </p>
+
+          <div class="about-info-grid">
+            <div class="info-item">
+              <i class="fas fa-user-graduate"></i>
+              <div>
+                <span class="info-label">Degree</span>
+                <span class="info-value">BCA (Bachelor of Computer Applications)</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-university"></i>
+              <div>
+                <span class="info-label">College</span>
+                <span class="info-value">LNCT University</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <span class="info-label">Location</span>
+                <span class="info-value">India 🇮🇳</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-heart"></i>
+              <div>
+                <span class="info-label">Interests</span>
+                <span class="info-value">Coding, Gaming</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-buttons">
+            <a href="#contact" class="btn btn-primary"><i class="fas fa-envelope"></i> Hire Me</a>
+            <a href="#projects" class="btn btn-outline"><i class="fas fa-code"></i> See Projects</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS SECTION ========== -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="skills-wrapper">
+        <!-- Tech Skills -->
+        <div class="skills-col" data-aos="fade-right" data-aos-delay="100">
+          <h3 class="skills-sub"><i class="fas fa-code"></i> Technical Skills</h3>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span><i class="fab fa-html5 html-icon"></i> HTML5</span>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="80" style="background: linear-gradient(90deg, #e34c26, #f16529);"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span><i class="fab fa-css3-alt css-icon"></i> CSS</span>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="80" style="background: linear-gradient(90deg, #264de4, #2965f1);"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span><i class="fab fa-js js-icon"></i> JavaScript</span>
+              <span class="skill-percent">10%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="10" style="background: linear-gradient(90deg, #f7df1e, #f0c808); "></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span><i class="fab fa-java java-icon"></i> Java</span>
+              <span class="skill-percent">40%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="40" style="background: linear-gradient(90deg, #f89820, #e76f00);"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span><i class="fab fa-python python-icon"></i> Python (Basic)</span>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="90" style="background: linear-gradient(90deg, #3776ab, #ffd43b);"></div>
+            </div>
+          </div>
+        </div>
+
+        
+         
+  <!-- ========== RESUME SECTION ========== -->
+  <section class="section resume-section" id="resume">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">My Resume</span>
+        <h2 class="section-title">My <span class="highlight">Resume</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="resume-grid">
+        <!-- Education Timeline -->
+        <div class="resume-col" data-aos="fade-right" data-aos-delay="100">
+          <h3 class="resume-col-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+          <div class="timeline">
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2024 – 2027</span>
+                <h4>BCA — Bachelor of Computer Applications</h4>
+                <p>Lakshmi Narain College of Technology University, Bhopal</p>
+                <p class="timeline-desc">Focus on Web Development, Java Programming, Database Management & Software Engineering.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2023 – 2024</span>
+                <h4>12th — Commerce</h4>
+                <p>pushp bal vidhya mandir h.s,sehore</p>
+                <p class="timeline-desc">Scored 65% in Class 12th Board Exams. Computer Science as elective subject.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2021 – 2022</span>
+                <h4>10th —  / m.p  Board</h4>
+                <p>saraswati convent school, sehore</p>
+                <p class="timeline-desc">Scored 48% in Class 10th. IT as optional subject.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        
+
+    </div>
+  </section>
+          <hr>
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <span class="logo-bracket">&lt;</span>ROHIT<span class="logo-bracket">/&gt;</span>
+          </a>
+          <p>Web Developer & BCA Student 🚀</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#resume">Resume</a>
+          <a href="#contact">Contact</a>
+        </div>
+      
+      </div>
+      <div class="footer-bottom">
+        <p>Made with <span class="heart"></span> by <strong>Rohit maheshwari</strong> &nbsp;|&nbsp; © <span id="year"></span> All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+
+  
+</body>
+</html>
